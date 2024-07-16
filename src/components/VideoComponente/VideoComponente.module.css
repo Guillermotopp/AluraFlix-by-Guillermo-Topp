@@ -1,0 +1,25 @@
+.videoContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .videoBox {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto; /* Esto asegura que el alto sea proporcional al ancho */
+  }
+  
+  .title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

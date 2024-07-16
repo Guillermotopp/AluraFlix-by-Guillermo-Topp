@@ -6,6 +6,7 @@ import styles from "./index.module.css";
 import FrontEndContainer from "components/FrontEndContainer/FrontEndContainer";
 import BannerPrincipal from "components/BannerPrincipal/BannerPrincipal";
 import VideoBox from "components/VideoBox/VideoBox";
+import VideoComponente from "components/VideoComponente/VideoComponente";
 
 function Inicio() {
   const [videos, setVideos] = useState([]);
@@ -35,6 +36,7 @@ function Inicio() {
           <VideoBox video={videos[0]} />
         )}
         <BannerPrincipal />
+        <VideoComponente />
       </Titulo>
 
         
