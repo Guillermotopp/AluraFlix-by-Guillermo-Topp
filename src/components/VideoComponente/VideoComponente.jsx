@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-
-import styles from "./VideoComponente.module.css";
 import VideoBox from "components/VideoBox/VideoBox";
+import styles from "./VideoComponente.module.css";
 
-const VideoComponente = ({ categoria }) => {
+const VideoComponente = ({ categoria, backgroundColor }) => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
-<VideoBox/>
+
   useEffect(() => {
     fetch("https://my-json-server.typicode.com/Guillermotopp/AluraFlix-by-Guillermo-Topp/videos")
       .then(response => response.json())
@@ -30,7 +29,7 @@ const VideoComponente = ({ categoria }) => {
   }
 
   return (
-    <div className={styles.videoContainer}>
+    <div className={styles.videoContainer} style={{ backgroundColor }}>
       {videos.map(video => (
         <VideoBox video={video} key={video.id} />
       ))}

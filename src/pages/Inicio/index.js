@@ -51,13 +51,13 @@ function Inicio() {
       /******************************************** */
       <div>
       <h1>Videos de Naturaleza</h1>
-      <VideoComponente categoria="Naturaleza" />
+      <VideoComponente categoria="Naturaleza" backgroundColor="#d1f7c4" />
 
       <h1>Videos de Tucumán</h1>
-      <VideoComponente categoria="Tucumán" />
+      <VideoComponente categoria="Tucumán" backgroundColor="#c4d7f7" />
 
       <h1>Videos de Fotografía</h1>
-      <VideoComponente categoria="Fotografía" />
+      <VideoComponente categoria="Fotografía" backgroundColor="#f7d4c4" />
     </div>
     </>
   );
