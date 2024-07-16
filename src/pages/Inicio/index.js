@@ -5,6 +5,7 @@ import styles from "./index.module.css";
 import { useState, useEffect } from "react";
 import FrontEndContainer from "components/FrontEndContainer/FrontEndContainer";
 import BannerPrincipal from "components/BannerPrincipal/BannerPrincipal";
+import VideoBox from "components/VideoBox/VideoBox";
 
 function Inicio() {
   const [videos, setVideos] = useState([]);
@@ -23,7 +24,9 @@ function Inicio() {
       <Banner img="home" color="#154580" />
       <Titulo>
         <FrontEndContainer />
+        <VideoBox />
         <BannerPrincipal />
+        
 
       </Titulo>
 
