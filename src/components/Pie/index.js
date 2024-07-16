@@ -3,7 +3,9 @@ import logo from "./logo-alura.png"
 
 function Pie(){
 return(<footer className={styles.pie}>
-<h2>Desarrollado por <img src={logo} alt="Alura"/></h2>
+<img src={logo} alt="Alura"/>
+<h2>Desarrollado por Guillermo Topp </h2>
+
 
 </footer>)
 

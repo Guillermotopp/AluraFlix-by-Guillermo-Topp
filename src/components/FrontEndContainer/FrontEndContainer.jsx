@@ -4,7 +4,7 @@ import React from 'react';
 const FrontEndContainer = () => {
   return (
     <div className={styles.frontBox}>
-      <h1 className={styles.frontendcontainer}>Front End</h1>
+      <h1 className={styles.frontendcontainer}>Video Player</h1>
     </div>
   );
 };
