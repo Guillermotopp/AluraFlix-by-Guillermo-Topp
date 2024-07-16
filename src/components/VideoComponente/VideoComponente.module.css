@@ -1,11 +1,10 @@
 .videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-  
   .videoBox {
     width: 200px;
     text-align: center;

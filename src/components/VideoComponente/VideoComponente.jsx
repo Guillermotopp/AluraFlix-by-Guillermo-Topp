@@ -1,49 +1,39 @@
-import React, { useEffect, useState } from 'react';
-import styles from './VideoComponente.module.css';
+import React, { useState, useEffect } from "react";
 
-const VideoComponente = () => {
+import styles from "./VideoComponente.module.css";
+import VideoBox from "components/VideoBox/VideoBox";
+
+const VideoComponente = ({ categoria }) => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
-
+<VideoBox/>
   useEffect(() => {
-    fetch('https://my-json-server.typicode.com/Guillermotopp/AluraFlix-by-Guillermo-Topp/videos')
+    fetch("https://my-json-server.typicode.com/Guillermotopp/AluraFlix-by-Guillermo-Topp/videos")
       .then(response => response.json())
       .then(data => {
-        // Filtrar videos por categoría "Naturaleza"
-        const naturalezaVideos = data.filter(video => video.Categoria === "Naturaleza");
-        setVideos(naturalezaVideos);
-        setLoading(false); // Marca la carga como completa una vez que se obtienen los videos
+        const filteredVideos = data.filter(video => video.Categoria === categoria);
+        setVideos(filteredVideos);
+        setLoading(false);
       })
       .catch(error => {
         console.error('Error fetching videos:', error);
-        setLoading(false); // También marca la carga como completa en caso de error
+        setLoading(false);
       });
-  }, []);
+  }, [categoria]);
 
   if (loading) {
     return <p>Cargando videos...</p>;
   }
 
+  if (videos.length === 0) {
+    return <p>No hay videos en esta categoría.</p>;
+  }
+
   return (
     <div className={styles.videoContainer}>
-      {videos.length === 0 ? (
-        <p>No hay videos en la categoría "Naturaleza".</p>
-      ) : (
-        videos.map(video => (
-          <div key={video.id} className={styles.videoBox}>
-            <iframe
-              title={video.titulo}
-              width="100%"
-              height="auto"
-              src={video.link}
-              frameBorder="0"
-              allowFullScreen
-              className={styles.video}
-            ></iframe>
-            <div className={styles.title}>{video.titulo}</div>
-          </div>
-        ))
-      )}
+      {videos.map(video => (
+        <VideoBox video={video} key={video.id} />
+      ))}
     </div>
   );
 };

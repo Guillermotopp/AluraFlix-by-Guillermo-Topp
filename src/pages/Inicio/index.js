@@ -47,6 +47,18 @@ function Inicio() {
           <Card {...video} key={video.id} />
         ))}
       </section>
+
+      /******************************************** */
+      <div>
+      <h1>Videos de Naturaleza</h1>
+      <VideoComponente categoria="Naturaleza" />
+
+      <h1>Videos de Tucumán</h1>
+      <VideoComponente categoria="Tucumán" />
+
+      <h1>Videos de Fotografía</h1>
+      <VideoComponente categoria="Fotografía" />
+    </div>
     </>
   );
 }

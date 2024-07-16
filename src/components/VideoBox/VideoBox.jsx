@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from './VideoBox.module.css';
+import React from "react";
+import styles from "./VideoBox.module.css";
 
 const VideoBox = ({ video }) => {
   return (
-    <div className={styles.videoContainer}>
+    <div className={styles.videoBox}>
       <iframe
         title={video.titulo}
-        width="300"
-        height="200"
+        width="200"
+        height="auto"
         src={video.link}
         frameBorder="0"
         allowFullScreen
