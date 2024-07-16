@@ -2,7 +2,7 @@
     {
         "id": 1,
         "titulo": "Caballos en el Dique El Cadillal",
-        "Categoria": "Naturaleza",
+        "Categoria": "Tucumán",
         "link": "https://www.youtube.com/embed/sHio8HtEv7o?si=yeaQ6SXe58yI7Tce"
     },
     {
@@ -19,15 +19,15 @@
     },
     {
         "id": 4,
-        "titulo": "Fotógrafo Guillermo Topp",
+        "titulo": "Verdon de Horco Molle",
         "Categoria": "Fotografía",
-        "link": "https://youtube.com/shorts/Eo4mleHUC94?si=tGmNB_hxPetquW8e"
+        "link": "https://www.youtube.com/embed/rhhwsb4GdKE?si=EEMRn-T2bA7bM-dm"
     },
     {
         "id": 5,
-        "titulo": "Una Maca Grande nadando en el Dique Celestino Gelsi en Tucumán, Argentina",
-        "Categoria": "Naturaleza",
-        "link": "https://www.youtube.com/watch?v=EuR-aJdajy8"
+        "titulo": "Dique Celestino Gelsi, El Cadillal, Tucumán",
+        "Categoria": "Tucumán",
+        "link": "https://www.youtube.com/embed/xXiF_c0NVDo?si=Kfyg8MULmBrwjGJX"
     },
     {
         "id": 6,
@@ -37,9 +37,9 @@
     },
     {
         "id": 7,
-        "titulo": "Pajaro Carpintero Real Colaptes Melanochloros",
-        "Categoria": "Naturaleza",
-        "link": "https://youtu.be/gjg8K6cFvXE"
+        "titulo": "Aves de Tucumán, el Sorprendente mundo alado",
+        "Categoria": "Fotografía",
+        "link": "https://www.youtube.com/embed/J71fyVIAdWA?si=hvitLZtKu_BiaEmJ" 
     },
     {
         "id": 8,
@@ -49,9 +49,15 @@
     },
     {
         "id": 9,
-        "titulo": "Tordo Musico de Horco Molle",
+        "titulo": "El Universo Oculto Revelado",
+        "Categoria": "Fotografía",
+        "link": "https://youtu.be/RqUDmDJeYec?si=-JlKsMU1d8JxriJw"
+    },
+    {
+        "id": 10,
+        "titulo": "Gerri Lacustris en un Rio de Horco Molle",
         "Categoria": "Naturaleza",
-        "link": "https://youtu.be/4N0bH-GwxvU?si=VgyWKlzaQ1psu5-Z"
+        "link": "https://youtu.be/DaUhc-aAUeI?si=buvyd8LaN52p80Ni"
     },
     {
         "id": 10,
