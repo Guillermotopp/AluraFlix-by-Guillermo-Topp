@@ -1,27 +1,63 @@
 { "videos":[
     {
         "id": 1,
-        "titulo": "Como utilizar el Display block, inline, inline-block",
-        "Categoria": "Front End",
-        "link": "https://www.youtube.com/embed/f-dKJW4ycig?si=fobpbXEAupHbOnyA"
+        "titulo": "Araña Tejedora Naranja - Alpaida Veniliae",
+        "Categoria": "Naturaleza",
+        "link": "https://www.youtube.com/shorts/5loFfsKBIAU"
     },
     {
         "id": 2,
-        "titulo": "Productividad en el trabajo remoto",
-        "Categoria": "Front End",
-        "link": "https://www.youtube.com/embed/AULPtYo25Lw?si=UGdKX1NSrEcQ0jfn"
+        "titulo": "Piedras y Olas en El Dique Celestino Gelsi",
+        "Categoria": "Tucumán",
+        "link": "https://www.youtube.com/embed/f-dKJW4ycig?si=fobpbXEAupHbOnyA"
     },
     {
         "id": 3,
-        "titulo": "¿Cuáles son las principales áreas de la programación?",
-        "Categoria": "Front End",
-        "link": "https://www.youtube.com/embed/03cxUlwLVt4?si=zVCUQNO-eS2RZQTO"
+        "titulo": "Araña tejedora naranja Alpaida Veniliae",
+        "Categoria": "Naturaleza",
+        "link": "https://www.youtube.com/embed/k8VcqfiJHQk?si=BekOKkYB16AoCvFr"
     },
     {
         "id": 4,
-        "titulo": "Detección de intruso con IA",
-        "Categoria": "Front End",
-        "link": "https://www.youtube.com/embed/5T_Q_NtNLZE?si=M7D0JeagaKqsoaFs"
+        "titulo": "Fotógrafo Guillermo Topp",
+        "Categoria": "Fotografía",
+        "link": "https://youtube.com/shorts/Eo4mleHUC94?si=tGmNB_hxPetquW8e"
+    },
+    {
+        "id": 5,
+        "titulo": "Una Maca Grande nadando en el Dique Celestino Gelsi en Tucumán, Argentina",
+        "Categoria": "Naturaleza",
+        "link": "https://www.youtube.com/watch?v=EuR-aJdajy8"
+    },
+    {
+        "id": 6,
+        "titulo": "Pajaro Carpintero Real , Colaptes Melanochloros #Aves #Naturaleza #Tucumán #PajaroCarpinteroReal",
+        "Categoria": "Naturaleza",
+        "link": "https://www.youtube.com/embed/PByeepceRmI?si=oobePsokUtYYSdq4" 
+    },
+    {
+        "id": 7,
+        "titulo": "Pajaro Carpintero Real Colaptes Melanochloros",
+        "Categoria": "Naturaleza",
+        "link": "https://youtu.be/gjg8K6cFvXE"
+    },
+    {
+        "id": 8,
+        "titulo": "Una hormiga en Horco Molle",
+        "Categoria": "Naturaleza",
+        "link": "https://youtube.com/shorts/PsBl4ET8vDs?si=krHpKxiCm1HFJY2h"
+    },
+    {
+        "id": 9,
+        "titulo": "Tordo Musico de Horco Molle",
+        "Categoria": "Naturaleza",
+        "link": "https://youtu.be/4N0bH-GwxvU?si=VgyWKlzaQ1psu5-Z"
+    },
+    {
+        "id": 10,
+        "titulo": "Gerri Lacustris en un Rio de Horco Molle",
+        "Categoria": "Naturaleza",
+        "link": "https://youtu.be/DaUhc-aAUeI?si=buvyd8LaN52p80Ni"
     }
 ]
 }
