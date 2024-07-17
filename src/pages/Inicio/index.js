@@ -7,6 +7,7 @@ import FrontEndContainer from "components/FrontEndContainer/FrontEndContainer";
 import BannerPrincipal from "components/BannerPrincipal/BannerPrincipal";
 import VideoBox from "components/VideoBox/VideoBox";
 import VideoComponente from "components/VideoComponente/VideoComponente";
+import AgregarVideoForm from "components/AgregarVideoForm/AgregarVideoForm";
 
 function Inicio() {
   const [videos, setVideos] = useState([]);
@@ -25,6 +26,22 @@ function Inicio() {
       });
   }, []);
 
+  const handleAgregarVideo = (nuevoVideo) => {
+    fetch("https://my-json-server.typicode.com/guillermotopp/AluraFlix-by-Guillermo-Topp/videos", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(nuevoVideo),
+    })
+    .then(response => response.json())
+    .then(data => {
+      setVideos((prevVideos) => [...prevVideos, data]);
+    })
+    .catch(error => {
+      console.error("Error agregando video:", error);
+    });
+  };
   return (
     <>
       <Banner img="home" color="#154580" />
@@ -50,15 +67,16 @@ function Inicio() {
 
       /******************************************** */
       <div>
-      <h1>Videos de Naturaleza</h1>
-      <VideoComponente categoria="Naturaleza" backgroundColor="#d1f7c4" />
+        <h1>Videos de Naturaleza</h1>
+        <VideoComponente categoria="Naturaleza" backgroundColor="#d1f7c4" />
 
-      <h1>Videos de Tucumán</h1>
-      <VideoComponente categoria="Tucumán" backgroundColor="#c4d7f7" />
+        <h1>Videos de Tucumán</h1>
+        <VideoComponente categoria="Tucumán" backgroundColor="#c4d7f7" />
 
-      <h1>Videos de Fotografía</h1>
-      <VideoComponente categoria="Fotografía" backgroundColor="#f7d4c4" />
-    </div>
+        <h1>Videos de Fotografía</h1>
+        <VideoComponente categoria="Fotografía" backgroundColor="#f7d4c4" />
+      </div>
+      <AgregarVideoForm onAgregarVideo={handleAgregarVideo} />
     </>
   );
 }
