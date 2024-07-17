@@ -1,5 +1,5 @@
 .frontBox {
-  width: 60%; /* Ajusta el ancho según lo necesites */
+  width: 100%; /* Ajusta el ancho según lo necesites */
   height: 60px; /* Ajusta la altura según lo necesites */
   background-color: rgba(0, 0, 255, 0.2); /* Color azul con 20% de transparencia */
   display: flex;
